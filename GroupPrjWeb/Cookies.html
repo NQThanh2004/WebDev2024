@@ -59,7 +59,6 @@
             margin: 15px 0;
             font-size: 18px;
             font-weight: bold;
-           
             color: #4CAF50;
         }
         .dish-type {
@@ -70,12 +69,13 @@
             color: black;
             font-size: 15px;
         }
-        .dish-scroll {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
+        .rotated-text {
+            transform: rotate(-90deg); 
+            transform-origin: left top; 
+            white-space: nowrap; 
+          }
+        .link {
+            text-decoration: none;
         }
     </style>
 </head>
@@ -86,49 +86,65 @@
         <div class="dish">
             <img src="c:\category\Lemony Butter Cookies.webp" alt="Lemon Butter Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Lemon Butter Cookies</p>
+            <a href="https://www.foodandwine.com/recipes/lemony-butter-cookies" class="link">
+                <p class="dish-title">Lemon Butter Cookies</p>
+            </a>
             <p class="dish-time">120 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Brown Butter and Dark Chocolate Rye Cookies.webp" alt="Brown Butter and Dark Chocolate Rye Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Brown Butter and Dark Chocolate Rye Cookies</p>
+            <a href="https://www.foodandwine.com/brown-butter-dark-chocolate-rye-cookies-7972260" class="link">
+            <p class="dish-title">Brown Butter Chocolat</p>
+            </a>
             <p class="dish-time">60 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Spiced Banana-Oatmeal Cookies.webp" alt="Spiced Banana-Oatmeal Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Spiced Banana-Oatmeal Cookies</p>
+            <a href="https://www.foodandwine.com/banana-oatmeal-cookies-8423646" class="link">
+            <p class="dish-title">Spiced Banana Cookies</p>
+            </a>
             <p class="dish-time">70 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Negroni Cookies.webp" alt="Negroni Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Negroni Cookies</p>
+            <a href="https://foodandwine.com/negroni-cookies-6826689" class="link">
+            <p class="dish-title">Snow Strawberry Cookies</p>
+            </a>
             <p class="dish-time">90 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Pumpkin Spice Snickerdoodles.webp" alt="Pumkin Spice Snickerdoodles" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Pumkin Spice Snickerdoodle</p>
+            <a href="https://www.twopeasandtheirpod.com/pumpkin-snickerdoodles/" class="link">
+            <p class="dish-title">Spice Snickerdoodle</p>
+            </a>
             <p class="dish-time">100 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Cardamom Thumbprints.webp" alt="Cardamom Thumbprints" width="300" height="200">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.foodandwine.com/recipes/cardamom-thumbprints" class="link">
             <p class="dish-title">Cardamom Thumbprints</p>
+            </a>
             <p class="dish-time">50 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Brown-Butter Chocolate Chip Cookies.webp" alt="Brown-Butter Chocolate Chip Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Brown-Butter Chocolate Chip Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/brown-butter-chocolate-chip-cookies/" class="link">
+            <p class="dish-title">Butter Chocolate Cookies</p>
+            </a>
             <p class="dish-time">70 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Double-Chocolate Rye Cookies.webp" alt="Double-Chocolate Rye Cookies" width="300" height="200">
             <p class="dish-type">Cookies</p>
-            <p class="dish-title">Double=Chocolate Rye Cookies</p>
+            <a href="https://www.foodandwine.com/recipes/double-chocolate-rye-cookies" class="link">
+            <p class="dish-title">Chocolate Rye Cookies</p>
+            </a>
             <p class="dish-time">100 minutes</p>
         </div>
     </div>
@@ -139,25 +155,33 @@
         <div class="dish">
             <img src="c:\category\ChewySugarCookies.webp" alt="Chew Sugar Cookies" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.allrecipes.com/recipe/22850/chewy-sugar-cookies/" class="link">
             <p class="dish-title">Chew Sugar Cookies</p>
+            </a>
             <p class="dish-time">90 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\No-bake-Cookies.jpg" alt="No Bake Cookies" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/no-bake-cookies/" class="link">
             <p class="dish-title">No Bake Cookies</p>
+            </a>
             <p class="dish-time">65 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Snickerdoodles.jpg" alt="Snicker Doodles" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.modernhoney.com/the-best-snickerdoodle-cookie-recipe/" class="link">
             <p class="dish-title">Snicker Doodles</p>
+            </a>
             <p class="dish-time">60 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Pumpkin-Oatmeal-Cream.jpg" alt="Pumpkin Oatmeal Cream"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/pumpkin-oatmeal-cream-pies/" class="link">
             <p class="dish-title">Pumpkin Oatmeal Cream</p>
+            </a>
             <p class="dish-time">50 minutes</p>
         </div>
     </div>
@@ -165,25 +189,33 @@
         <div class="dish">
             <img src="c:\category\Biscoff-Smores-Cookies.jpg" alt="Biscoff Smores Cookies" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/biscoff-smores-cookies/" class="link">
             <p class="dish-title">Biscoff Smores Cookies</p>
+            </a>
             <p class="dish-time">80 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Peanut-Butter-Banana-Oatmeal-Bars.jpg" alt="Peanut Butter Banana Oatmeal Bars"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/peanut-butter-banana-oatmeal-bars/" class="link">
             <p class="dish-title">Peanut Butter Banana Oatmeal Bars</p>
+            </a>
             <p class="dish-time">90 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Strawberry-Chocolate-Cookies.jpg" alt="Strawberry Chocolate Cookies"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/strawberry-chocolate-cookies/" class="link">
             <p class="dish-title">Strawberry Chocolate Cookies</p>
+            </a>
             <p class="dish-time">60 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Peppermint-Mocha-Marshmallow-Cookies.webp" alt="Peppermint Mocha Marshmallow Cookies" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/peppermint-mocha-marshmallow-cookies/" class="link">
             <p class="dish-title">Peppermint Mocha Marshmallow Cookies</p>
+            </a>
             <p class="dish-time">100 minutes</p>
         </div>
     </div>
@@ -191,25 +223,33 @@
         <div class="dish">
             <img src="c:\category\Maple-Pecan-Chocolate-Chip-Cookies.jpg" alt="Maple Pecan Chocolate Chip Cookies"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/maple-pecan-chocolate-chip-cookies/" class="link">
             <p class="dish-title">Maple Pecan Chocolate Chip Cookies</p>
+            </a>
             <p class="dish-time">70 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Cookies-and-Cream-Cookies.jpg" alt="Cookies and Cream Cookies"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/cookies-and-cream-cookies/" class="link">
             <p class="dish-title">Cookies and Cream Cookies</p>
+            </a>
             <p class="dish-time">90 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Peppermint-Oreo-Cookie.webp" alt="Peppermint Oreo Cookie"width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/homemade-peppermint-oreos/" class="link">
             <p class="dish-title">Peppermint Oreo Cookie</p>
+            </a>
             <p class="dish-time">85 minutes</p>
         </div>
         <div class="dish">
             <img src="c:\category\Chocolate-Monster-Cookies.jpg" alt="Chocolate Monster Cookies" width="400" height="480">
             <p class="dish-type">Cookies</p>
+            <a href="https://www.twopeasandtheirpod.com/chocolate-monster-cookies/" class="link">
             <p class="dish-title">Chocolate Monster Cookies</p>
+            </a>
             <p class="dish-time">75 minutes</p>
         </div>
     </div>
