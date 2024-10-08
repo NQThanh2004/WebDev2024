@@ -22,30 +22,33 @@
             font-size: 50px;
             color: #333;
         }
-        .menu-tabs {
+        .tabs {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            padding-top: 20px 15px;
+            justify-content: space-evenly;
+            margin: 10px;
         }
-        .menu-tab {
+        .tabs label {
+            padding: 10px;
             cursor: pointer;
-            padding: 10px 15px;
-            color: #00796b;
             border-bottom: 2px solid transparent;
-            transition: 0.3s;
-            font-size: 20px;
+            font-size:20px;
+            color:#4CAF50;
         }
-        .menu-tab.active {
-            border-bottom: 2px solid #00796b;
-            font-size: 20px;
+        .tabs label:hover {
+            color: #999;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input:checked + label {
+            border-bottom: 2px solid teal;
         }
         .add-recipe {
             display: block;
             text-align: center;
             padding: 10px;
             margin: 20px 0;
-            background-color: #00796b;
+            background-color: #4CAF50;
             color: #fff;
             border-radius: 5px;
             text-decoration: none;
@@ -58,10 +61,6 @@
             text-align: center;
             color: #888;
         }
-        .menu-recipes {
-            color: #999;
-            font-size: 14px;
-        }
         .calendar-nav {
             display: flex;
             align-items: center;
@@ -72,7 +71,6 @@
             padding: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        
         .prev-date, .next-date {
             background: none;
             border: none;
@@ -83,14 +81,12 @@
             border-radius: 50%;
             width: 30px;
             height: 30px;
-        }
-        
+        }        
         .prev-date:hover, .next-date:hover {
             background-color: #e0e0e0;
         }
-        
         .date {
-            font-size: 16px;
+            font-size: 20px;
             color: #333;
         }
     </style>
@@ -99,12 +95,17 @@
 
     <div class="container">
         <h1>Meal Planner</h1>
-        <div class="menu-tabs">
-            <div class="menu-tab active">Today<br>0 recipes</div>
-            <div class="menu-tab">This Week<br>0 recipes</div>
-            <div class="menu-tab">Unscheduled<br>0 recipes</div>
+        <div class="tabs">
+            <input type="radio" id="today" name="tab" checked>
+            <label for="today"><b>Today</b><br>0 recipes</label>
+            
+            <input type="radio" id="thisweek" name="tab">
+            <label for="thisweek"><b> This Week</b><br>0 recipes</label>
+    
+            <input type="radio" id="unscheduled" name="tab">
+            <label for="unscheduled"><b> Unscheduled</b><br>0 recipes</label>
         </div>
-
+    
         <div class="calendar-nav">
             <button class="prev-date" onclick="changeDate(-1)">&lt;</button>
             <span class="date" id="dateDisplay">Monday, Oct 7</span>
