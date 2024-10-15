@@ -89,6 +89,62 @@
             font-size: 20px;
             color: #333;
         }
+        .day-section {
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 15px 0;
+        }
+        
+        .day-header {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #00796b;
+            padding-left: 10px;
+        }
+        
+        .day-text {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #00796b;
+            padding-left: 10px;
+        }
+        
+        .day-text:hover {
+            color:#888
+        }
+
+        .content {
+            display: none;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+        
+        /* Style for active/open section */
+        .day-section.active .content {
+            display: block;
+        }
+        .circle {
+            width: 30px;
+            height: 30px;
+            background-color: #4CAF50; 
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: left;
+        }
+        .circle-position{
+            padding-top: 20px;
+        }
+       .plus {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -111,13 +167,66 @@
             <span class="date" id="dateDisplay">Monday, Oct 7</span>
             <button class="next-date" onclick="changeDate(1)">&gt;</button>
         </div>
-
-        <a href="#" class="add-recipe">+ Add Recipe</a>
-
-        <div class="no-recipes">
-            <p>You don't have any recipes scheduled.</p>
-            <p>To get started, add recipes from your saved collections or customized recommendations.</p>
+    
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Monday</span>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Tuesday</span>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Wednesday</span>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Thursday</span>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Friday</span>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Saturday</span>
+            </div>
+        </div>
+
+        <div class="day-section">
+            <div class="day-header">
+                <div class="circle">
+                    <span class="plus">+</span>
+                </div>
+                <span class="day-text">Sunday</span>
+            </div>
+        </div>
